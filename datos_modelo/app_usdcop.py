@@ -305,7 +305,7 @@ with tab1:
 # TAB 2: PRONÓSTICO VS REAL
 # -------------------------------------------------------------------
 with tab2:
-    st.subheader("📊 Comparación: Real vs Pronóstico (USD/COP – retornos)")
+    st.subheader("📊 ARIMAX(12,0,0)–GARCH(1,1) Comparación: Real vs Pronóstico (USD/COP – retornos)")
 
     fig_fc = px.line(
         df_pron,
@@ -438,3 +438,4 @@ with tab4:
         file_name="residuos_usdcop.csv",
         mime="text/csv",
     )
+
